@@ -20,15 +20,68 @@ body {
     box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
 }
 
-#searchbarinput {
+#searchbar-input {
     border: none;
     outline: none;
     background: transparent;
     display: flex;
     font-size: 16px;
     flex: 1;
-    margin: 2px 8px 2px 40px;
+    flex-wrap: wrap;
+    margin: 2px 9px 1px 0px;
 }
+
+#searchbar-input:required {
+    box-shadow: none;
+}
+
+#mag-glass {
+    display: flex;
+    margin: 12px 13px 12px 14px;
+    fill: #9aa0a6;
+
+    height: 20px;
+    width: 20px;
+}
+
+#google-apps {
+    background-image: url("google_apps.png");
+    background-position: -132px -38px;
+    background-size: 528px 68px;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .55;
+    margin-right: 15px;
+}
+
+#sign-in {
+    border: 1px solid #4285f4;
+    outline: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4285f4;
+    opacity: 1;
+    display: inline-block;
+    line-height: 28px;
+    vertical-align: middle;
+    text-align: left;
+    border-radius: 2px;
+    padding: 0 12px;
+    text-decoration: none;
+}
+
+#google-img {
+    display: block;
+    padding-top: 152px;
+    padding-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: padding-top 0.4s ease, width 0.4s ease, height 0.4s ease;
+}
+
 
 #buttons {
     top: 53px;
@@ -38,52 +91,6 @@ body {
     margin-right: auto;
     text-align: center;
     user-select: none;
-}
-
-#header {
-    padding-top: 16px;
-    line-height: 30px;
-    user-select: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-}
-
-#footer {
-    background-color: #f2f2f2;
-    position: absolute;
-    display: block;
-    line-height: 40px;
-    width: 100%;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    min-width: 400px;
-    border-top: 1px solid #e4e4e4;
-    font-size: 14px;
-}
-
-.headera {
-    text-decoration: none;
-    color: #000;
-    opacity: 0.75;
-    padding-right: 15px;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-#page-container {
-    min-height: 100vh;
-    position: relative;
-}
-
-#content-wrap {
-    padding-top: 46px;
-    padding-bottom: 138px;
-    min-width: 400px;
 }
 
 #content-wrap button {
@@ -113,9 +120,44 @@ a:hover {
     color: #222;
 }
 
+#page-container {
+    min-height: 100vh;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#content-wrap {
+    padding-top: 46px;
+    padding-bottom: 138px;
+    min-width: 400px;
+}
+
+#header {
+    padding-top: 16px;
+    line-height: 30px;
+    user-select: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    display: block;
+    line-height: 40px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 400px;
+    border-top: 1px solid #e4e4e4;
+    font-size: 14px;
+}
+
 #hl {
     float: left;
-    margin-top: -1px;
     padding-left: 25px;
     display: flex;
 }
@@ -138,6 +180,17 @@ a:hover {
     margin-right: 30px;
 }
 
+.header-link {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.75;
+    padding-right: 15px;
+}
+
+.header-link:hover {
+    text-decoration: underline;
+}
+
 #footer a {
     padding-left: 27px;
     height: 40px;
@@ -146,51 +199,8 @@ a:hover {
     display: flex;
 }
 
-#main {
-    height: auto;
-}
-
-#googleapps {
-    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
-    background-position: -132px -38px;
-    background-size: 528px 68px;
-    height: 30px;
-    width: 30px;
-    box-sizing: border-box;
-    display: inline-block;
-    vertical-align: middle;
-    opacity: .55;
-    margin-right: 15px;
-}
-
-#signin {
-    border: 1px solid #4285f4;
-    outline: none;
-    font-weight: bold;
-    color: #ffffff;
-    background-color: #4285f4;
-    opacity: 1;
-    display: inline-block;
-    line-height: 28px;
-    vertical-align: middle;
-    text-align: left;
-    border-radius: 2px;
-    padding: 0 12px;
-    text-decoration: none;
-}
-
-#signin:hover {
-    text-decoration: none;
-    cursor: default;
-}
-
-#googleimg {
-    display: block;
-    padding-top: 152px;
-    padding-bottom: 27px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: padding-top 0.4s ease, width 0.4s ease, height 0.4s ease;
+#footer a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-height: 768px) {
