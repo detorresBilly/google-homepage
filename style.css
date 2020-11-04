@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #222;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+}
+
+#searchbar {
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 482px;
+}
+
+#searchbar:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+}
+
+#searchbarinput {
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    font-size: 16px;
+    flex: 1;
+    margin: 2px 8px 2px 40px;
+}
+
+#buttons {
+    top: 53px;
+    padding-top: 18px;
+    max-width: 584px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    user-select: none;
+}
+
+#header {
+    padding-top: 16px;
+    line-height: 30px;
+    user-select: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+}
+
+#footer {
+    background-color: #f2f2f2;
+    position: absolute;
+    display: block;
+    line-height: 40px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    min-width: 400px;
+    border-top: 1px solid #e4e4e4;
+    font-size: 14px;
+}
+
+.headera {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.75;
+    padding-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#page-container {
+    min-height: 100vh;
+    position: relative;
+}
+
+#content-wrap {
+    padding-top: 46px;
+    padding-bottom: 138px;
+    min-width: 400px;
+}
+
+#content-wrap button {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #5F6368;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#content-wrap button:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+#content-wrap button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+#hl {
+    float: left;
+    margin-top: -1px;
+    padding-left: 25px;
+    display: flex;
+}
+
+#hr {
+    float: right;
+    padding-right: 30px;
+    display: flex;
+}
+
+#fl {
+    float: left;
+    display: flex;
+    margin-left: 30px;
+}
+
+#fr {
+    float: right;
+    display: flex;
+    margin-right: 30px;
+}
+
+#footer a {
+    padding-left: 27px;
+    height: 40px;
+    color: #5f6368;
+    text-decoration: none;
+    display: flex;
+}
+
+#main {
+    height: auto;
+}
+
+#googleapps {
+    background-image: url("https://ssl.gstatic.com/gb/images/i1_1967ca6a.png");
+    background-position: -132px -38px;
+    background-size: 528px 68px;
+    height: 30px;
+    width: 30px;
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: .55;
+    margin-right: 15px;
+}
+
+#signin {
+    border: 1px solid #4285f4;
+    outline: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4285f4;
+    opacity: 1;
+    display: inline-block;
+    line-height: 28px;
+    vertical-align: middle;
+    text-align: left;
+    border-radius: 2px;
+    padding: 0 12px;
+    text-decoration: none;
+}
+
+#signin:hover {
+    text-decoration: none;
+    cursor: default;
+}
+
+#googleimg {
+    display: block;
+    padding-top: 152px;
+    padding-bottom: 27px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: padding-top 0.4s ease, width 0.4s ease, height 0.4s ease;
+}
+
+@media only screen and (max-height: 768px) {
+    #googleimg {
+        padding-top: 110px;
+    }
+}
+
+@media only screen and (max-height: 536px) {
+    #googleimg {
+        height: 72px;
+        width: auto;
+        padding-top: 10px;
+        padding-bottom: 17px;
+    }
+}
+
+@media only screen and (max-width:805px) {
+    #fl,
+    #fr {
+        justify-content: center;
+        margin: 0;
+        float: none;
+    }
+    #footer a {
+        padding: 27;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    #header {
+        display: none;
+    }
+}
