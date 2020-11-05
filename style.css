@@ -85,7 +85,7 @@ body {
 
 #buttons {
     top: 53px;
-    padding-top: 18px;
+    padding-top: 29px;
     max-width: 584px;
     margin-left: auto;
     margin-right: auto;
@@ -99,8 +99,8 @@ body {
     border: 1px solid #f2f2f2;
     font-family: Arial, sans-serif;
     font-size: 14px;
+    margin-right: 4px;
     color: #5F6368;
-    margin: 11px 4px;
     padding: 0 16px;
     line-height: 27px;
     height: 36px;
@@ -114,6 +114,34 @@ body {
 }
 
 #content-wrap button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+#feeling-lucky {
+    cursor: pointer;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    color: #5F6368;
+    padding: 9px 16px;
+    margin-left: 4px;
+    line-height: 27px;
+    height: 36px;
+    border-radius: 4px;
+    text-align: center;
+}
+
+#feeling-lucky:focus {
+    border: 1px solid #4d90fe;
+    outline: none;
+}
+
+#feeling-lucky:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
     background-color: #f8f8f8;
     border: 1px solid #c6c6c6;
